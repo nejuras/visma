@@ -9,7 +9,7 @@
     Phone Number 1: <input type="text" name="phonenumber1"><br>
     Phone Number 2: <input type="text" name="phonenumber2"><br>
     Comment: <textarea name="comment"></textarea>
-    <input type="submit">
+    <input type="submit" value="submit">
 </form>
 
 </body>
