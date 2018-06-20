@@ -1,16 +1,12 @@
-<!DOCTYPE HTML >
-<html>
-<body>
+<?php
+require __DIR__ . '/vendor/autoload.php';
+include __DIR__ . '/src/Db.php';
 
-<form action="data.php" method="post">
-    First Name: <input type="text" name="firstname" value=""><br>
-    Last Name: <input type="text" name="lastname"><br>
-    Email: <input type="text" name="email"><br>
-    Phone Number 1: <input type="text" name="phonenumber1"><br>
-    Phone Number 2: <input type="text" name="phonenumber2"><br>
-    Comment: <textarea name="comment"></textarea>
-    <input type="submit" value="submit">
-</form>
+use Visma\Registration\Form;
 
-</body>
-</html>
+parse_str($argv[1], $_POST);
+
+$Form = new Form($conn);
+$Form->insert();
+$Form->delete();
+$Form->update();
