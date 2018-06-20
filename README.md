@@ -19,5 +19,5 @@ php index.php 'delete=18'
 
 Create .csv
 ```
-SELECT 'id', 'first_name', 'last_name', 'email', 'phone_number1', 'phone_number2', 'comment' UNION ALL SELECT id, first_name, last_name, email, phone_number1, phone_number2, comment FROM registration INTO OUTFILE '/var/lib/mysql-files/vimop.csv' FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n'
+SELECT 'id', 'first_name', 'last_name', 'email', 'phone_number1', 'phone_number2', 'comment' UNION ALL SELECT id, first_name, last_name, email, phone_number1, phone_number2, comment FROM registration INTO OUTFILE 'visma.csv' FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '"' LINES TERMINATED BY '\n'
 ```
